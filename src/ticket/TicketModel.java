@@ -1,18 +1,22 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package parkingticketcitationgui;
+Omar Vergara (20438054)
+CSCI 3340-02
+Project 3
+2/23/2018
+*/
+
+package ticket;
 
 import java.util.ArrayList;
 
+
 /**
- *
- * @author srv_veralab
+ * Our "database" for the project, the model in MVC
+ * @author trick
  */
-public class Data {
-    private ArrayList<Ticket> ticketList = new ArrayList();    
+public class TicketModel {
+    Ticket currentTicket = new Ticket();
+    ArrayList<Ticket> ticketList = new ArrayList();    
 
     /**
      * @return the ticketList

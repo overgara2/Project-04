@@ -1,15 +1,17 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package parkingticketcitationgui;
+Omar Vergara (20438054)
+CSCI 3340-02
+Project 3
+2/23/2018
+*/
+
+package ticket;
 
 /**
- *
- * @author srv_veralab
+ * This class is an object representing a ticket.
+ * @author trick
  */
-public class Ticket {
+public class Ticket {   
     private String license;
     private String state;
     private String permit;
@@ -22,6 +24,26 @@ public class Ticket {
     private String issuer;
     private String paidStatus;
     
+    /**
+     * Empty constructor
+     */
+    public Ticket() {
+    }
+    
+    /**
+     * Ticket Constructor
+     * @param license   string of the license plate number
+     * @param state     string of the state
+     * @param permit    string of the permit number
+     * @param makeModel string of the make/model
+     * @param color     string of the color
+     * @param reason    string of the reason
+     * @param date      string of the date
+     * @param time      string of the time
+     * @param location  string of the location
+     * @param issuer    string of the issuer
+     * @param paidStatus    string of the paid status
+     */
     public Ticket(String license, String state, String permit, String makeModel,
             String color, String reason, String date, String time, String
                 location, String issuer, String paidStatus) {
